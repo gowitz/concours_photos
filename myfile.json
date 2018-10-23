@@ -1,0 +1,20 @@
+[
+  {
+    "column4": 3.14159,
+    "column1": 1,
+    "column3": "Record 1 Text B",
+    "column2": "Record 1 Text A"
+    },
+    {
+      "column4": 6.28318,
+      "column1": 2,
+      "column3": "Record 2 Text B",
+      "column2": "Record 2 Text A"
+    },
+    {
+      "column4": 9.42477,
+      "column1": 3,
+      "column3": "Record 3 Text B",
+      "column2": "Record 3 Text A"
+    }
+  ]
