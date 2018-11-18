@@ -56,10 +56,18 @@
 		<h2>Concours photos AJS</h2>
 	<div id="gallery" >
 	</div>
+	<a href="https://docs.google.com/forms/d/e/1FAIpQLSeD44mcDhjqUNnPBiByCBFRvhpzfAfa7swi_o5WINM8gz8F9g/viewform?usp=pp_url" target="_blank"><img src="images/voting.png" height="100"/></a>
 	</div>
 	<script>
 	var transform = {"<>":"img","alt":"${alt}","src":"${urlThumbs}","data-image":"${urlBig}","data-description":"${description}","html":""};
-	var local_data = data;
+
+	if (new Date() < new Date('11/20/2018 00:00')) {
+		var local_data = [{"alt":"0","urlThumbs":"images/thumbs/0.jpg", "urlBig":"images/big/0.jpg", "description":"Galerie visible dès le 20 novembre à minuit"}];
+	}
+	else {
+		var local_data = data;
+	}
+
 
 	$('#gallery').json2html( local_data,transform );
 
